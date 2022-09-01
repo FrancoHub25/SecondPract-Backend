@@ -1,5 +1,12 @@
 package com.practicas.repository;
 
-public interface DeporteInterface {
+import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.practicas.entities.Deporte;
+
+public interface DeporteInterface extends JpaRepository<Deporte, Integer> {
+	
 }
